@@ -1,0 +1,41 @@
+{
+  "name": "Player-Game",
+  "description": "Player que esta en el juego.",
+  "plural": "Players-Game",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "generated": false,
+      "required": true
+    },
+    "hp": {
+      "type": "number",
+      "required": true
+    },
+    "mana": {
+      "type": "number",
+      "required": true,
+      "default": 5
+    }
+  },
+  "validations": [],
+  "relations": {
+    "player": {
+      "type": "belongsTo",
+      "model": "Player",
+      "foreignKey": "playerID"
+    },
+    "hand": {
+      "type": "hasMany",
+      "model": "Card",
+      "foreignKey": "cardID"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

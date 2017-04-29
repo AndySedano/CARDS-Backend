@@ -1,0 +1,34 @@
+{
+  "name": "Player",
+  "description": "Player que hereda de Usuario, para login y estadisticas",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "matchesPlayed": {
+      "type": "number",
+      "default": 0
+    },
+    "matchesWon": {
+      "type": "number",
+      "default": 0
+    },
+    "rolesPlayed": {
+      "type": [
+        "number"
+      ],
+      "default": [
+        0
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

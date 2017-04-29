@@ -1,0 +1,33 @@
+{
+  "name": "Room",
+  "description": "Para buscar cuartos y crear cuartos de juegos.",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "forceId": true,
+  "properties": {
+    "joinable": {
+      "type": "boolean",
+      "default": true
+    },
+    "location": {
+      "type": "geopoint"
+    },
+    "boss": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "players": {
+      "type": "hasMany",
+      "model": "Player-Room",
+      "foreignKey": "playerGameID"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

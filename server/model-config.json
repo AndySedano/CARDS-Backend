@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "Mongo"
+  },
+  "AccessToken": {
+    "dataSource": "Mongo",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "Mongo",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "Mongo",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "Mongo",
+    "public": false
+  },
+  "Room": {
+    "dataSource": "Mongo",
+    "public": true
+  },
+  "Player": {
+    "dataSource": "Mongo",
+    "public": true
+  },
+  "Player-Room": {
+    "dataSource": "Mongo",
+    "public": true
+  },
+  "Game": {
+    "dataSource": "Mongo",
+    "public": true
+  },
+  "Player-Game": {
+    "dataSource": "Mongo",
+    "public": true
+  },
+  "Card": {
+    "dataSource": "Mongo",
+    "public": true
+  },
+  "Boss": {
+    "dataSource": "Mongo",
+    "public": true
+  },
+  "Class": {
+    "dataSource": "Mongo",
+    "public": true
+  }
+}

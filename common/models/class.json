@@ -1,0 +1,33 @@
+{
+  "name": "Class",
+  "description": "Classes disponibles con su hp, descripcion y lore",
+  "plural": "Classes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "type": "number",
+      "default": 0
+    },
+    "hp": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "lore": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

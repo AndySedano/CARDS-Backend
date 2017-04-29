@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "Mongo": {
+    "host": "ds113871.mlab.com",
+    "port": 13871,
+    "url": "",
+    "database": "cards",
+    "password": "molinillos",
+    "name": "Mongo",
+    "user": "andy",
+    "connector": "mongodb"
+  }
+}

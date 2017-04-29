@@ -1,0 +1,29 @@
+{
+  "name": "Player-Room",
+  "description": "Player que se muestra en los rooms.",
+  "plural": "Players-Room",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "class": {
+      "type": "string"
+    },
+    "ready": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "player": {
+      "type": "belongsTo",
+      "model": "Player",
+      "foreignKey": "playerID"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

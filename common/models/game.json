@@ -1,0 +1,26 @@
+{
+  "name": "Game",
+  "description": "Juegos, el principal que usara el host(tablero)",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "moves": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "players-game": {
+      "type": "hasMany",
+      "model": "Player-Game",
+      "foreignKey": "playerGameID"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
