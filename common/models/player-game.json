@@ -1,6 +1,6 @@
 {
   "name": "Player-Game",
-  "description": "Player que esta en el juego.",
+  "description": "Tracks stats and hand of the player in the game",
   "plural": "Players-Game",
   "base": "PersistedModel",
   "idInjection": true,
@@ -33,7 +33,7 @@
     "hand": {
       "type": "hasMany",
       "model": "Card",
-      "foreignKey": "cardID"
+      "foreignKey": "cardId"
     }
   },
   "acls": [],

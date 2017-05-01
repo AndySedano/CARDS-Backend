@@ -1,6 +1,6 @@
 {
   "name": "Class",
-  "description": "Classes disponibles con su hp, descripcion y lore",
+  "description": "Usable classses in the game, with their HP, description and lore",
   "plural": "Classes",
   "base": "PersistedModel",
   "idInjection": true,

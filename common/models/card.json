@@ -1,13 +1,13 @@
 {
   "name": "Card",
-  "description": "Cartas :D",
+  "description": "Cards :D",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "nombre": {
+    "name": {
       "type": "string",
       "required": true
     },
@@ -17,19 +17,11 @@
     "img": {
       "type": "string"
     },
-    "costo": {
+    "cost": {
       "type": "number"
     },
-    "idCarta": {
-      "type": "number",
-      "id": true,
-      "generated": false,
-      "required": true
-    },
-    "id": {
-      "type": "number",
-      "id": true,
-      "generated": true
+    "action": {
+      "type": "number"
     }
   },
   "validations": [],

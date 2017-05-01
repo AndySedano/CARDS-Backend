@@ -1,6 +1,6 @@
 {
   "name": "Room",
-  "description": "Para buscar cuartos y crear cuartos de juegos.",
+  "description": "Used to search and create game rooms",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {

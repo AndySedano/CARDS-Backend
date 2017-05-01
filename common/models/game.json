@@ -1,6 +1,6 @@
 {
   "name": "Game",
-  "description": "Juegos, el principal que usara el host(tablero)",
+  "description": "Games, the principal json used by the host (tablero)",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -19,6 +19,11 @@
       "type": "hasMany",
       "model": "Player-Game",
       "foreignKey": "playerGameID"
+    },
+    "bosses": {
+      "type": "hasOne",
+      "model": "Boss",
+      "foreignKey": "bossID"
     }
   },
   "acls": [],

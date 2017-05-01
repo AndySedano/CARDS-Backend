@@ -1,6 +1,6 @@
 {
   "name": "Player-Room",
-  "description": "Player que se muestra en los rooms.",
+  "description": "Player information shown in the rooms",
   "plural": "Players-Room",
   "base": "PersistedModel",
   "idInjection": true,

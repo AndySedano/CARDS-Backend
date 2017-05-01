@@ -1,6 +1,6 @@
 {
   "name": "Boss",
-  "description": "Bosses malignos",
+  "description": "Evil bosses",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -16,6 +16,9 @@
         "number"
       ],
       "required": true
+    },
+    "description": {
+      "type": "string"
     }
   },
   "validations": [],

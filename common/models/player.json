@@ -1,6 +1,6 @@
 {
   "name": "Player",
-  "description": "Player que hereda de Usuario, para login y estadisticas",
+  "description": "Player that inherits from user, used for login and statistics",
   "base": "User",
   "idInjection": true,
   "options": {
