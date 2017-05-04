@@ -21,7 +21,8 @@
       "type": "number",
       "required": true,
       "default": 5
-    }
+    },
+    "username" : "string"
   },
   "validations": [],
   "relations": {

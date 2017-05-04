@@ -14,7 +14,8 @@
     "ready": {
       "type": "boolean",
       "default": false
-    }
+    },
+    "username": "string"
   },
   "validations": [],
   "relations": {
